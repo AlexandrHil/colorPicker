@@ -55,9 +55,9 @@ class ViewController: UIViewController {
     
     private func setColor() -> UIColor? {
         
-        guard let setRedColorValue = Float(redTextField.text ?? "") else { return nil }
-        guard let setGreenColorValue = Float(greenTextField.text ?? "")  else { return nil }
-        guard let setBlueColorValue = Float(blueTextField.text ?? "") else { return nil }
+        guard let setRedColorValue = Float(redTextField.text ?? "0") else { return nil }
+        guard let setGreenColorValue = Float(greenTextField.text ?? "0")  else { return nil }
+        guard let setBlueColorValue = Float(blueTextField.text ?? "0") else { return nil }
         
         let backgroundColor = UIColor(red: CGFloat(Float(setRedColorValue)),
                                       green: CGFloat(Float(setGreenColorValue)),
